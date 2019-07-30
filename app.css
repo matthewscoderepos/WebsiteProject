@@ -15,15 +15,17 @@ h1{
     text-transform: uppercase;
     border-top: 5px solid;
     font-size: 76px;
+    margin: 10px;
 }
 
 img{
     height: 500px;
-    border-radius: 50%;
+
+    /* border-radius: 5%; */
 }
 
 button{
-    margin: 30px auto 0;
+    margin: 20px auto 0;
     padding: 20px 25px;
     background-color: rgb(12, 12, 12);
     color: #6441a4;
@@ -65,13 +67,16 @@ p{
     justify-content: flex-end;
 
 }
-
+#desc{
+    width: 800px;
+}
 /* #endregion */
 
 /*#region menu and functions */
 .menuButton{
     display: inline-flexbox;
     cursor: pointer;
+    width: 40px;
 }
 
 .bar1,.bar2,.bar3{

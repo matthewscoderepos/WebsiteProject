@@ -7,7 +7,7 @@ pics = [
 	"imgs/Launcher.PNG",
 	"imgs/RGBHerring.PNG",	
 	"imgs/SmallDB.PNG",
-	"imgs/TripTracker.PNG"
+	"imgs/TripTracker.PNG",
 ]
 
 var btn = document.querySelector('#next');

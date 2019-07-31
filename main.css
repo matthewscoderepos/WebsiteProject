@@ -19,8 +19,8 @@ h1{
 }
 
 img{
-    height: 500px;
-
+    height: 540px;
+    width: 720px;
     /* border-radius: 5%; */
 }
 
@@ -58,7 +58,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    height: 87vh;
+    /* height: 87vh; */
 }
 #bottomText{
     display: flex;
@@ -68,7 +68,15 @@ p{
 
 }
 #desc{
-    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+#helpText{
+    margin: 3px;
 }
 /* #endregion */
 

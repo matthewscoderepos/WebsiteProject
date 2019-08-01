@@ -21,6 +21,7 @@ h1{
 img{
     height: 540px;
     width: 720px;
+    cursor: pointer;
     /* border-radius: 5%; */
 }
 
@@ -37,6 +38,7 @@ button{
     text-decoration: none;
     letter-spacing: 4px;
     outline: none;
+    cursor: pointer;
 }
 
 button:hover{
@@ -49,6 +51,39 @@ button:hover{
 p{
     font-size: 20px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(12, 12, 12);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    transition: .2s;
+    background-color: #6441a4;
+    color: rgb(12, 12, 12);
+    text-decoration: underline;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #6441a4;
+  }
+
 
 /*#endregion*/
 
@@ -78,9 +113,14 @@ p{
 #helpText{
     margin: 3px;
 }
+
+#selfie{
+    height: 540px;
+    width: 720px;
+}
 /* #endregion */
 
-/*#region menu and functions */
+/* #region menu and functions
 .menuButton{
     display: inline-flexbox;
     cursor: pointer;
@@ -109,4 +149,4 @@ p{
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
-/* #endregion */
+#endregion */

@@ -1,6 +1,6 @@
 // Write your JS in here
 pics = [
-	"../imgs/FullDB.PNG", 
+	"../imgs/FullDB.png", 
 	"../imgs/GameOfLife.PNG",
 	"../imgs/JumpingJim.PNG",
 	"../imgs/Launcher.PNG",
@@ -50,6 +50,3 @@ img.addEventListener("click", function(){
 		location.href = urls[urls.length-1];
 });
 
-// function myFunction(x){
-// 	x.classList.toggle("change");
-// }

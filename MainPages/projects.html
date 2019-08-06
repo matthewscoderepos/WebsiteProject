@@ -11,21 +11,46 @@
 		<li><a href="projects.html">Projects</a></li>
 		<li><a href="resume.html">Resume</a></li>
 		<li><a href="contact.html">Contact Me</a></li>
-	  </ul>
+	</ul>
+
+
+	<style>
+	.column.pic {
+		float: left;
+		width: 50%;
+		display:table-cell; 
+		vertical-align:middle;
+		text-align:center;
+	}
+	.column.desc {
+		float: left;
+		width: 50%;
+		display:table-cell; 
+		vertical-align:middle;
+	}
+	.row:after {
+  		content: "";
+  		display: table;
+ 		clear: both;
+	}
+	</style>
 
 	<section id="container">
-		<h1>Projects</h1>
-		<h6 id="helpText">Click the image to see more about this project.</h6>
-
-		<!-- Eventually, I should pull these from a JS function. -->
-		<!-- Pull from local storage the value of the itr before the page changed -->
-		<img src="../imgs/Casino.PNG" alt="A Casino game suite with Roulette, BlackJack, and Poker. Written in C# with WPF.">
+			<h1>Projects</h1>
+			<h6 id="helpText">Click the image to see more about this project.</h6>
+			<button id="next">See Next Project</button>
+		</section>
+	
+	<div class="row">
+		<div class="column pic">
+			<img src="../imgs/Casino.PNG" alt="A Casino game suite with Roulette, BlackJack, and Poker. Written in C# with WPF.">
+		</div>
+		
+		<div class="column desc">
 		<p id="desc">A Casino game suite with Roulette, BlackJack, and Poker. Written in C# with WPF.</p>
+		</div>
+	</div>
 
-
-
-		<button id="next">See Next Project</button>
-	</section>
 	<section id="bottomText">
 			<p>A Collection Of My University And Free Time Projects</p>
 	</section>

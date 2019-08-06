@@ -22,7 +22,7 @@ img{
     height: 540px;
     width: 720px;
     cursor: pointer;
-    /* border-radius: 5%; */
+    border-radius: 5%;
 }
 
 button{
@@ -72,7 +72,6 @@ ul {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     transition: .2s;
     background-color: #6441a4;
@@ -118,35 +117,8 @@ ul {
     height: 540px;
     width: 720px;
 }
+
+#next{
+    margin: 10px;
+}
 /* #endregion */
-
-/* #region menu and functions
-.menuButton{
-    display: inline-flexbox;
-    cursor: pointer;
-    width: 40px;
-}
-
-.bar1,.bar2,.bar3{
-    width: 35px;
-    height: 5px;
-    background-color: #6441a4;
-    margin: 6px 0;
-    transition: .2s;
-    display: flex;
-}
-
-.change .bar1{
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-  
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-#endregion */

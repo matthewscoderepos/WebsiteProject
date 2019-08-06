@@ -19,8 +19,10 @@ h1{
 }
 
 img{
-    height: 540px;
-    width: 720px;
+    /* height: 540px;
+    width: 720px; */
+    max-width: 100%;
+    height: auto;
     cursor: pointer;
     border-radius: 5%;
 }

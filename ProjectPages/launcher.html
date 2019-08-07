@@ -1,23 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>A Project by Matthew</title>
-    
-  <link rel="stylesheet" href="../main.css" type="text/css">
-  </head>
-  <body>
-    <ul>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Project by Matthew</title>
+<link rel="stylesheet" href="projects.css" type="text/css">
+</head>
+<body>
+  <ul>
 		<li><a href="../index.html">About Me</a></li>
 		<li><a href="../MainPages/projects.html">Projects</a></li>
 		<li><a href="../MainPages/resume.html">Resume</a></li>
 		<li><a href="../MainPages/contact.html">Contact Me</a></li>
-	  </ul>
+	</ul>
 
-	<section id="container">
+	<section id="title">
     <h1>Unified Video Game Launcher Service</h1>
-    <h2>This page is under construction.</h2>
+  </section>
 
-	</section>
-  </body>
-</html>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 9</div>
+    <img src="../imgs/LauncherImages/InitialStart.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 9</div>
+    <img src="../imgs/LauncherImages/InitialWithParent.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 9</div>
+    <img src="../imgs/LauncherImages/ServiceSearch.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 9</div>
+    <img src="../imgs/LauncherImages/CustomEXE.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 9</div>
+    <img src="../imgs/LauncherImages/ParentalLock.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 9</div>
+    <img src="../imgs/LauncherImages/Games.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Three</div>
+  </div> 
+  
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 9</div>
+    <img src="../imgs/LauncherImages/GameScreen.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 9</div>
+    <img src="../imgs/LauncherImages/GameSettings.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 9</div>
+    <img src="../imgs/LauncherImages/SettingsMenu.PNG" style="max-width: 100%; max-height: 800px; display:block; margin:auto;">
+    <div class="text">Caption Three</div>
+  </div>
+    
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+</div>
+
+<section id="bottomText">
+  <p>A unified video game launcher. Allows the user to launch games from the seven major game launchers. Uses APIs from all seven launchers to allow easy access and statistics tracking for games.</p>
+</section>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

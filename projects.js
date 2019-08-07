@@ -1,13 +1,13 @@
 // Write your JS in here
 pics = [
-	"../imgs/FullDB.png", 
-	"../imgs/GameOfLife.PNG",
-	"../imgs/JumpingJim.PNG",
-	"../imgs/Launcher.PNG",
-	"../imgs/RGBHerring.PNG",	
-	"../imgs/SmallDB.PNG",
-	"../imgs/TripTracker.jpg",
-	"../imgs/Casino.PNG",
+	"../imgs/MainImages/FullDB.png", 
+	"../imgs/MainImages/GameOfLife.PNG",
+	"../imgs/MainImages/JumpingJim.PNG",
+	"../imgs/MainImages/Launcher.PNG",
+	"../imgs/MainImages/RGBHerring.PNG",	
+	"../imgs/MainImages/SmallDB.PNG",
+	"../imgs/MainImages/TripTracker.jpg",
+	"../imgs/MainImages/Casino.PNG",
 ]
 alts = [
 	"A full database project with frontend HTML and backend written in Java. Database stored in Postgres and SQL.", 

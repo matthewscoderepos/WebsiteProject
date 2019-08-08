@@ -11,6 +11,7 @@ body{
 }
 
 h1{
+    color: white;
     font-weight: 500;
     text-transform: uppercase;
     border-top: 5px solid;
@@ -21,6 +22,7 @@ h1{
 img{
     /* height: 540px;
     width: 720px; */
+    max-height: 500px;
     max-width: 100%;
     height: auto;
     cursor: pointer;
@@ -31,7 +33,7 @@ button{
     margin: 20px auto 0;
     padding: 20px 25px;
     background-color: rgb(12, 12, 12);
-    color: #6441a4;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
@@ -112,6 +114,7 @@ ul {
 
 }
 #helpText{
+    /* color: #fff; */
     margin: 3px;
 }
 

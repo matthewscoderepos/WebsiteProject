@@ -2,128 +2,177 @@
 
 /*#region general rules */
 
-body{
-    background-color: rgb(12, 12, 12);
-    color: #6441a4;
-    font-family: "Source Code Pro";
-    font-weight: 500;
-    user-select: none;
+body {
+  background-color: rgb(12, 12, 12);
+  color: #6441a4;
+  font-family: "Source Code Pro";
+  font-weight: 500;
+  user-select: none;
 }
 
-h1{
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-top: 5px solid;
-    font-size: 76px;
-    margin: 10px;
+h1 {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top: 5px solid;
+  font-size: 76px;
+  margin: 10px;
 }
 
-img{
-    /* height: 540px;
+img {
+  /* height: 540px;
     width: 720px; */
-    max-height: 500px;
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 5%;
+  max-height: 500px;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5%;
 }
 
-button{
-    margin: 20px auto 0;
-    padding: 20px 25px;
-    background-color: rgb(12, 12, 12);
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    border: 1px solid #2e2e2e;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 4px;
-    outline: none;
-    cursor: pointer;
+button {
+  margin: 20px auto 0;
+  padding: 20px 25px;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #2e2e2e;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  outline: none;
+  cursor: pointer;
 }
 
-button:hover{
-    transition: .2s;
-    background-color: #6441a4;
-    color: rgb(12, 12, 12);
-    text-decoration: underline;
+button:hover {
+  transition: 0.2s;
+  background-color: #6441a4;
+  color: rgb(12, 12, 12);
+  text-decoration: underline;
 }
 
-p{
-    font-size: 20px;
+p {
+  font-size: 20px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgb(12, 12, 12);
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    transition: .2s;
-    background-color: #6441a4;
-    color: rgb(12, 12, 12);
-    text-decoration: underline;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(12, 12, 12);
+}
 
-  li a:hover:not(.active) {
-    background-color: #6441a4;
-  }
+li {
+  float: left;
+  font-size: 20px;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  transition: 0.2s;
+  background-color: #6441a4;
+  color: rgb(12, 12, 12);
+  text-decoration: underline;
+}
+
+li a:hover:not(.active) {
+  background-color: #6441a4;
+}
 
 /*#endregion*/
 
 /*#region specifics */
-#container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    /* height: 87vh; */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  /* height: 87vh; */
 }
-#bottomText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-
+#bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
-#desc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-
-
+#desc {
+  margin: 50px;
+  margin-bottom: 0px;
 }
-#helpText{
-    /* color: #fff; */
-    margin: 3px;
+#helpText {
+  /* color: #fff; */
+  margin: 3px;
 }
 
-#selfie{
-    height: 540px;
-    width: 720px;
+#selfie {
+  height: 540px;
+  width: 720px;
 }
 
-#next{
-    margin: 10px;
+#next {
+  margin: 10px;
 }
 /* #endregion */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  font-family: "Source Code Pro";
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 14px;
+  text-align: center;
+  user-select: none;
+  margin: 0;
+  align-items: center;
+  text-transform: none;
+  letter-spacing: 0;
+  border: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #6441a4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

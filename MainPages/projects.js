@@ -10,7 +10,7 @@ pics = [
 	"../imgs/MainImages/Casino.PNG",
 ]
 alts = [
-	"A full database project with frontend HTML and backend written in Java. Database stored in Postgres and SQL.", 
+	"A full database project with frontend HTML and backend written in Java. \nConsisting of 9 total tables, the database models a library system. \nMembers are able to view books based on many criteria and are shown which books are available based on the criteria chosen. \nMembers are also able to see a list of their past and active transactions including times and locations that books were checked out. \nLibrarians are able to check in and out books at their home location. \nBoth member and librarian username and passwords are authenticated against two tables holding login information. \nDatabase stored in Postgres and SQL.", 
 	"A cellular automata project written in Java using Processing. Allows the user to control the parameters of Conways Game of Life in an interactive and visually pleasing environment.",
 	"A graph search project. Uses Depth and Breadth first searches to solve the puzzle in the Jumping Jim problem.",
 	"A unified video game launcher. Allows the user to launch games from the seven major game launchers. Uses APIs from all seven launchers to allow easy access and statistics tracking for games.",
@@ -38,7 +38,9 @@ var itr = 0;
 btn.addEventListener("click", function(){
 	img.src = pics[itr];
 	img.alt = alts[itr];
-	desc.textContent = alts[itr];
+	let description = alts[itr];
+	// description = description.replace(/\n/g, "<br />");
+	desc.textContent = description;
 	itr = (itr+1) % pics.length;
 });
 

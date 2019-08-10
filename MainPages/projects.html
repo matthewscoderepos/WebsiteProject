@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Matthew's Code</title>
-	<link rel="stylesheet" type="text/css" href="../main.css">
-</head>
-<body>
+  <head>
+    <title>Matthew's Code</title>
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a href="../index.html">About Me</a></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Projects</button>
+          <div class="dropdown-content">
+			<a href="MainPages/projects.html" style="text-align: center">See All</a>
+            <a href="ProjectPages/casino.html">Casino</a>
+            <a href="ProjectPages/fullDB.html">Full Stack Database</a>
+            <a href="ProjectPages/gameOfLife.html">Game of Life</a>
+            <a href="ProjectPages/jumpingJim.html">Graph Search</a>
+            <a href="ProjectPages/launcher.html">Unified Game Launcher</a>
+            <a href="ProjectPages/rgbHerring.html">Stegonagraphy</a>
+            <a href="ProjectPages/smallDB.html">Console Databse</a>
+            <a href="ProjectPages/tripTracker.html">TripTracker Android App</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
 
-	<ul>
-		<li><a href="../index.html">About Me</a></li>
-		<li><a href="projects.html">Projects</a></li>
-		<li><a href="resume.html">Resume</a></li>
-		<li><a href="contact.html">Contact Me</a></li>
-	</ul>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
+      body {
+        margin: 0;
+      }
 
-	<style>
-	* {
-  		box-sizing: border-box;
-	}
+      .column.pic {
+        float: left;
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        padding-left: 20px;
+      }
+      .column.desc {
+        float: left;
+        width: 50%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media screen and (max-width: 1480px) {
+        .column.pic,
+        .column.desc {
+          width: 100%;
+        }
+      }
+    </style>
 
-	body {
-  		margin: 0;
-	}
+    <section id="container">
+      <h1>Projects</h1>
+      <button id="next">See Next Project</button>
+    </section>
 
-	.column.pic {
-		float: left;
-		width: 50%;
-		display:table-cell; 
-		vertical-align:middle;
-		text-align:center;
-		padding: 20px;
-	}
-	.column.desc {
-		float: left;
-		width: 50%;
-	}
-	.row:after {
-  		content: "";
-  		display: table;
- 		clear: both;
-	}
-	@media screen and (max-width: 1480px) {
-  		.column.pic, .column.desc {
-    		width: 100%;
-  		}
-	}
-	</style>
+    <div class="row">
+      <div class="column pic">
+        <h6 id="helpText">Click the image to see more about this project.</h6>
+        <img
+          src="../imgs/MainImages/Casino.PNG"
+          alt="A Casino game suite with Roulette, BlackJack, and Poker. Written in C# with WPF."
+        />
+      </div>
 
-	<section id="container">
-			<h1>Projects</h1>
-			<button id="next">See Next Project</button>
-		</section>
-	
-	<div class="row">
-		<div class="column pic">
-			<h6 id="helpText">Click the image to see more about this project.</h6>
-			<img src="../imgs/MainImages/Casino.PNG" alt="A Casino game suite with Roulette, BlackJack, and Poker. Written in C# with WPF.">
-		</div>
-		
+      <div class="column desc">
+        <p id="desc" style="white-space: pre-wrap; line-height: 1.6">
+          "A Casino game suite with Roulette, BlackJack, and Poker. Written in
+          C# with WPF.
+        </p>
+      </div>
+    </div>
 
-		
+    <section id="bottomText">
+      <p>A Collection Of My University And Free Time Projects</p>
+    </section>
 
-		<div class="column desc">
-		<p id="desc">"A Casino game suite with Roulette, BlackJack, and Poker. Written in C# with WPF.</p>
-		</div>
-	</div>
-
-	<section id="bottomText">
-			<p>A Collection Of My University And Free Time Projects</p>
-	</section>
-
-	<script src="projects.js"></script>
-</body>
+    <script src="projects.js"></script>
+  </body>
 </html>

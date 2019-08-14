@@ -126,7 +126,6 @@ li a:hover:not(.active) {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: -25px;
   width: 100%;
   text-align: center;
   color: whitesmoke;
@@ -148,6 +147,7 @@ li a:hover:not(.active) {
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  margin-top: 30px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;

@@ -150,6 +150,7 @@ li a:hover:not(.active) {
 
 .dropdown:hover .dropbtn {
   background-color: #6441a4;
+  color: rgb(12, 12, 12);
 }
 
 .dropdown-content {

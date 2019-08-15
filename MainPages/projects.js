@@ -38,9 +38,7 @@ var itr = 0;
 btn.addEventListener("click", function(){
 	img.src = pics[itr];
 	img.alt = alts[itr];
-	let description = alts[itr];
-	// description = description.replace(/\n/g, "<br />");
-	desc.textContent = description;
+	desc.textContent = alts[itr];
 	itr = (itr+1) % pics.length;
 });
 

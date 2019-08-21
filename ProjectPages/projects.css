@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 
 /*#region general rules */
 * {
@@ -193,17 +193,17 @@ li a:hover:not(.active) {
   .text {
     font-size: 11px;
   }
-  h1{
+  h1 {
     font-size: 30px;
   }
 }
 @media only screen and (max-width: 676px) {
-  h1{
+  h1 {
     font-size: 40px;
     text-align: center;
   }
-  ul{
-    width:50%;
+  ul {
+    width: 80%;
     margin: auto;
   }
 }
@@ -218,11 +218,11 @@ li a:hover:not(.active) {
 }
 
 #bottomText {
-  max-width: 1000px; 
-  display: block; 
+  max-width: 1000px;
+  display: block;
   margin: auto;
-  margin-bottom: 0px; 
-  text-align:center;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .dropdown {

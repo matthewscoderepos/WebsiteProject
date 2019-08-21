@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 
 /*#region general rules */
-
 
 body {
   background-color: rgb(12, 12, 12);
@@ -100,11 +99,11 @@ li a:hover:not(.active) {
   /* height: 87vh; */
 }
 #bottomText {
-  max-width: 1000px; 
-  display: block; 
+  max-width: 1000px;
+  display: block;
   margin: auto;
-  margin-bottom: 0px; 
-  text-align:center;
+  margin-bottom: 0px;
+  text-align: center;
 }
 #desc {
   margin: 50px;
@@ -124,7 +123,6 @@ li a:hover:not(.active) {
   margin: 10px;
 }
 /* #endregion */
-
 
 .dropdown {
   float: left;
@@ -182,37 +180,37 @@ li a:hover:not(.active) {
 }
 
 @media only screen and (max-width: 676px) {
-  h1{
+  h1 {
     font-size: 40px;
     text-align: center;
   }
-  ul{
-    width:50%;
+  ul {
+    width: 80%;
     margin: auto;
   }
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 }
 @media only screen and (max-width: 536px) {
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 }
 
-h2{
-  display: block; 
+h2 {
+  display: block;
   margin: auto;
-  margin-bottom: 0px; 
-  text-align:center;
+  margin-bottom: 0px;
+  text-align: center;
 }
-h3{
-  display: block; 
+h3 {
+  display: block;
   margin: auto;
-  margin-bottom: 0px; 
-  text-align:center;
+  margin-bottom: 0px;
+  text-align: center;
 }

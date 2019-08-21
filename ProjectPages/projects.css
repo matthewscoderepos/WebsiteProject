@@ -197,9 +197,14 @@ li a:hover:not(.active) {
     font-size: 30px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 676px) {
   h1{
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+  ul{
+    width:50%;
+    margin: auto;
   }
 }
 

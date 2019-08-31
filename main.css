@@ -119,7 +119,7 @@ li a:hover:not(.active) {
   width: 720px;
 }
 
-#next {
+.next {
   margin: 10px;
 }
 /* #endregion */
